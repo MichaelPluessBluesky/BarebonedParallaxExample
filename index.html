@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- Website Title -->
+        <title>Bareboned Prallax Example</title>
+
+        <!-- Including JQuery -->
+        <script src="js/lib/jquery-3.4.1.min.js"></script>
+        
+        <!-- Including Custom Style Sheet -->
+        <link rel="stylesheet" href="styles/css/style.css" type="text/css">
+        
+        <!-- Including Custom Scripts -->
+        <script src="js/parallax.js"></script>
+    </head>
+
+    <body>
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- Navigation -->
+        <header>
+            <nav style="background: lightgray; height: 100px;">
+            </nav>
+        </header>
+                
+        <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- Parallax -->
+        <div class="parallax" id="parallax">
+            <div class="parallax-element">
+                <img src="img/parallax/icosahedron.svg" alt="Parallax background image">
+            </div>
+            <div class="parallax-content">
+                    
+                <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+                <!-- Main -->
+                <main data-ovata-area="main;desc=/templates/areas/main">
+
+                    <div style="height: calc(100vh - 100px); border: 10px solid green; box-sizing: border-box;">
+                        <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                    </div>
+
+                    <div style="height: 1000px; border: 10px solid blue; box-sizing: border-box;">
+                        Content 1
+                    </div>
+
+                    <div style="height: 2000px; border: 10px solid red; box-sizing: border-box;">
+                        Content 2
+                    </div>
+
+                </main>
+                
+                <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+                <!-- Footer -->
+                <footer>
+                </footer>
+                
+            </div> <!-- /.parallax-content -->
+        </div> <!-- /.parallax -->
+
+    </body>
+    
+</html>

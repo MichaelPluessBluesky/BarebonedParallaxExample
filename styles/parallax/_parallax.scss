@@ -1,0 +1,58 @@
+html {
+    // With this technique of using parallax, we do not scroll the html object but the .parallax div
+    overflow: hidden;
+}
+body {
+    // Browser margin reset
+    margin: 0;
+}
+
+/*
+* The parallax container provides the scroll bar of the website and replaces the normal scroll bar of the body.
+* If we tried to assign the parallax functionality to the body tag, this would break the "position: fixed;" elements (namely the navigation bar).
+*/
+.parallax {
+    width: 100%;
+    // Full window height minus top-bar
+    height: calc(100vh - 100px); // Important to use vh and not %, otherwise scrolling breaks!
+    
+    // Setting distance of "camera" to website content
+    perspective: 1px;
+    // Position camera in middle of screen
+    perspective-origin: 50%;
+    
+    // Necessary for 3d transformations to be carried through the dom
+    transform-style: preserve-3d;
+    
+    // Enable scroll bar on parallax div
+    overflow-y: auto;
+}
+
+.parallax-content {
+    // Position content in front of parallax background and enable 3d functionality
+    transform: translateZ(0px);
+}
+
+.parallax-element {
+    position: absolute;
+    
+    // Full width of screen. Depends on distance of parallax to content
+    width: 400%;
+    left: -150%; // 150% of width overlapping on both left and right side
+
+    // Height of parallax background should be adjusted to website content or it might overflow in the bottom
+    height: 150%; // modified in parallax.js
+    // Position background at top such that it is aligned with the website content
+    top: -150%; // 50vh * (distance background to content) / (distance camera to content)
+    
+    // Position background behind content
+    transform: translateZ(-3px);
+    
+    img {
+        // Fit background into background container
+        width: 100%;
+        height: auto;
+        
+        position: absolute;
+    }
+}

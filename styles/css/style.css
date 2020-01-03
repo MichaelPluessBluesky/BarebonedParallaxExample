@@ -1,0 +1,2 @@
+html{overflow:hidden}body{margin:0}.parallax{width:100%;height:calc(100vh - 100px);-webkit-perspective:1px;perspective:1px;-webkit-perspective-origin:50%;perspective-origin:50%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;overflow-y:auto}.parallax-content{-webkit-transform:translateZ(0px);transform:translateZ(0px)}.parallax-element{position:absolute;width:400%;left:-150%;height:150%;top:-150%;-webkit-transform:translateZ(-3px);transform:translateZ(-3px)}.parallax-element img{width:100%;height:auto;position:absolute}
+/*# sourceMappingURL=style.css.map */
